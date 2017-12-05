@@ -1,0 +1,9 @@
+{
+    "always_show_minimap_viewport": true,
+    "draw_centered": true,
+    "word_wrap": true,
+    "wrap_width": 80,
+    "font_size": 12,
+    "line_numbers": true,
+    "gutter": true,
+}

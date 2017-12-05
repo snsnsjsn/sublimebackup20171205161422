@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+if( isset( \$_COOKIE['debug'] ) ){
+	echo '<pre>'.print_r(${1:\$arr}, 1).'</pre>';
+}
+]]></content>
+<tabTrigger>debugger</tabTrigger>
+<scope>source.php</scope>
+<description>Debug inside Cookie</description>
+</snippet>

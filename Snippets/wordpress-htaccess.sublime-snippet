@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+# END WordPress
+]]></content>
+<tabTrigger>.htaccess</tabTrigger>
+<description>Wordpress htaccess</description>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!--  -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!--  -->
+</snippet>

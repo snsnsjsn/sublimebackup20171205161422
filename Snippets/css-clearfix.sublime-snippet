@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cleafix</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.scss</scope>
+	<description>CSS Clearfix</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+	\$log = fopen(LOGPATH . '${1:filename.log}', 'w');
+	fwrite(\$log, ${2:\$variable});
+	fclose(\$log);
+]]></content>
+<tabTrigger>wlogr</tabTrigger>
+<scope>source.php</scope>
+<description>Logger with fopen</description>
+</snippet>

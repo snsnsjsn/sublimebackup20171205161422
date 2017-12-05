@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+function ${1:my_function}(){
+	// ${3:totally awesome code here}
+}
+add_action( 'wp_ajax_${2:my_action}', '${1:my_function}' );
+add_action( 'wp_ajax_nopriv_${2:my_action}', '${1:my_function}' );
+]]></content>
+<tabTrigger>wpajax</tabTrigger>
+<description>Wordpress AJAX in Plugins API</description>
+<scope>source.php</scope> 
+</snippet>

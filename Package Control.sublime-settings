@@ -1,0 +1,46 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"AutoFileName",
+		"AutoHotkey",
+		"BracketHighlighter",
+		"Color Highlighter",
+		"ColorPicker",
+		"ConvertToUTF8",
+		"DocBlockr",
+		"Emmet",
+		"Expand Selection to Quotes",
+		"ExpandRegion",
+		"FindKeyConflicts",
+		"GitGutter",
+		"Hayaku - tools for writing CSS faster",
+		"Highlight",
+		"HighlightWords",
+		"HTML-CSS-JS Prettify",
+		"MoveTab",
+		"Notes",
+		"Package Control",
+		"PlainTasks",
+		"SFTP",
+		"SideBarEnhancements",
+		"StringEncode",
+		"SublimeLinter",
+		"SublimeLinter-csslint",
+		"SublimeLinter-html-tidy",
+		"SublimeLinter-jshint",
+		"SublimeLinter-php",
+		"Sublimerge Pro",
+		"TrailingSpaces",
+		"uroboroSQL Formatter",
+		"WordHighlight",
+		"WordPress",
+		"WordPress Completions",
+		"WordPress Customizer",
+		"WordPress Snippets"
+	]
+}

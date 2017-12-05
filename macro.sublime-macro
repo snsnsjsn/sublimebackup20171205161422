@@ -1,0 +1,100 @@
+[
+	{
+		"args":
+		{
+			"characters": "."
+		},
+		"command": "insert"
+	},
+	{
+		"args":
+		{
+			"characters": "body"
+		},
+		"command": "insert"
+	},
+	{
+		"args": null,
+		"command": "left_delete"
+	},
+	{
+		"args": null,
+		"command": "left_delete"
+	},
+	{
+		"args": null,
+		"command": "left_delete"
+	},
+	{
+		"args": null,
+		"command": "left_delete"
+	},
+	{
+		"args":
+		{
+			"characters": "dsdl"
+		},
+		"command": "insert"
+	},
+	{
+		"args":
+		{
+			"contents": "{$0}"
+		},
+		"command": "insert_snippet"
+	},
+	{
+		"args":
+		{
+			"file": "res://Packages/Default/Add Line in Braces.sublime-macro"
+		},
+		"command": "run_macro_file"
+	},
+	{
+		"args":
+		{
+			"characters": "backgrou"
+		},
+		"command": "insert"
+	},
+	{
+		"args":
+		{
+			"characters": "nd-color:"
+		},
+		"command": "insert"
+	},
+	{
+		"args":
+		{
+			"characters": "res"
+		},
+		"command": "insert"
+	},
+	{
+		"args": null,
+		"command": "left_delete"
+	},
+	{
+		"args":
+		{
+			"characters": "d;"
+		},
+		"command": "insert"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"forward": true
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"characters": "\n"
+		},
+		"command": "insert"
+	}
+]

@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+function auto_login( \$user ) {
+    \$username   = \$user;
+    if ( !is_user_logged_in() ) {
+        \$user = get_user_by('login', \$username );
+        \$user_id = \$user->ID;
+        wp_set_current_user( \$user_id, \$user_login );
+        wp_set_auth_cookie( \$user_id );
+        do_action( 'wp_login', \$user_login );
+    }     
+}
+
+auto_login( \$user );
+]]></content>
+<tabTrigger>switch_user</tabTrigger>
+<scope>source.php</scope>
+<description>Wordpress: Switch User</description>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!--  -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!--  -->
+</snippet>

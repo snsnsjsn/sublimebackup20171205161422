@@ -1,0 +1,50 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * Hook it into Wordpress
+ */
+add_action('admin_menu', 'plugin_name_menu_pages'); 
+
+/**
+ * Place all the add_menu_page functions in here
+ */
+function plugin_name_menu_pages(){
+
+	add_menu_page( \$admin_page_name, \$admin_page_name, 'manage_options', 'plugin_name_admin_page_handle', 'plugin_name_admin_menu' );
+
+}
+
+/**
+ * Admin page function
+ */
+function plugin_name_admin_page(){
+
+	\$message = NULL;
+
+	\$options = array();
+
+	if ( !current_user_can( 'manage_options' ) )  {
+	
+		wp_die( __( 'You do not have sufficient permissions to access this page.' ) );	
+	}
+
+	if( isset( \$_POST['publish'] ) ){
+
+		// This is code to capture \$_POST data if there's a form on  your admin page.
+	}
+
+	if( \$options = get_option('plugin_name_options') )
+	
+		\$options = unserialize(\$options);
+
+	ob_start(); include dirname(__DIR__) . '/partial/plugin_name_menu_page.php'; \$template = ob_get_clean();
+
+	echo \$template;
+}
+]]></content>
+	<tabTrigger>wordpress_admin_page</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>source.php</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>Wordpress Admin Page Boilerplate</description>
+</snippet>

@@ -1,0 +1,35 @@
+<snippet>
+	<content><![CDATA[
+
+	wp_mail( \$to, \$subject, \$message, \$headers, \$attachments );
+
+	if(\$mailed){
+
+	} else {
+		
+		global \$ts_mail_errors;
+
+		global \$phpmailer;
+		
+		if (!isset(\$ts_mail_errors)) \$ts_mail_errors = array();
+		
+		if (isset(\$phpmailer)) {
+		
+			\$ts_mail_errors[] = \$phpmailer->ErrorInfo;
+		
+		}
+
+		\$ts_mail_errors[] = date('Y-m-d H:i:s', time());
+
+		error_log(print_r(\$ts_mail_errors,1) . "\r\n", 3, DIRNAME(__DIR__) . '/logs/mailer.log');
+	}
+
+]]></content>
+<tabTrigger>wp_mail</tabTrigger>
+<description>Wordress: wp_mail with fail logic</description>
+<scope>source.php</scope>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!--  -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!--  -->
+</snippet>

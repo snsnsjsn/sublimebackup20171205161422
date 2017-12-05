@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+echo '<pre>'.print_r(${1:\$var}, 1).'</pre>';
+]]></content>
+<tabTrigger>epr</tabTrigger>
+<scope>source.php</scope> 
+	
+</snippet>

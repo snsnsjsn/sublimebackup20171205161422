@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+error_log(print_r(${1:\$foobar},1) . "\r\n", 3, __DIR__ . '/${2:logname}.log');
+]]></content>
+<tabTrigger>logr</tabTrigger>
+<scope>source.php</scope>
+<description>Error log template</description>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!--  -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!--  -->
+</snippet>

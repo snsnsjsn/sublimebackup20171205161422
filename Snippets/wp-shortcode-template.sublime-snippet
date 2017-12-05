@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[
+
+function ${1:shortcode_name}_function( \$atts, \$content = null ) {
+
+	extract(shortcode_atts( array(), \$atts ));
+
+	return '';
+}
+
+
+function register_${2:plugin_name}_shortcodes(){
+
+	add_shortcode('${1:shortcode_name}', '${1:shortcode_name}_function');
+}
+
+add_action('init', 'register_${2:plugin_name}_shortcodes');
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>register_shortcode</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+	<description>Wordpress Shortcode Template</description>
+</snippet>

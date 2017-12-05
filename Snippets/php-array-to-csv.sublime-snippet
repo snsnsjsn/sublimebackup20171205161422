@@ -1,0 +1,33 @@
+<snippet>
+	<content><![CDATA[
+
+    \$result = array();
+
+
+		\$FileName = "_export.csv";
+
+		\$file = fopen(\$path_to_error . '/' .\$FileName,"w");
+
+		\$keys = array_keys((array)\$result[0]);
+
+		// every row after that can be the data that corresponds to those headings
+
+		\$list = array();
+
+		array_push(\$list, \$keys);
+
+		foreach(\$result as \$r){
+			\$list[] = array_values((array)\$r);
+		}
+
+		foreach (\$list as \$fields) {
+		    fputcsv(\$file, \$fields);
+		}
+
+		fclose(\$file);
+
+]]></content>
+<tabTrigger>array_to_csv</tabTrigger>
+<scope>source.php</scope>
+<description>PHP script to turn php array to csv</description>
+</snippet>
